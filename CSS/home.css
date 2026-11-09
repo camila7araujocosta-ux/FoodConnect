@@ -1,14 +1,20 @@
         body {
-            background-color: #fff5f0;
+            background-color: #FFF5F0;
         }
 
         #header {
-            background-color: #6B8F71;
-            color: #3D3D3D;
+            background-color: #FFFFFF;
             padding: 20px;
             text-align: center;
         }
 
+        header img {
+            width: 180px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        
         #menu {
             float: left;
             width: 10%;
@@ -17,7 +23,7 @@
         }
 
         #main {
-            margin-left: 40%;
+            margin-left: 15%;
             height: 100%;
             padding: 20px;
         }
@@ -26,5 +32,5 @@
             background-color: #F7F4FA;
             color: #3D3D3D;
             text-align: center;
-            padding: 400px;
+            padding: 20px;
         }
