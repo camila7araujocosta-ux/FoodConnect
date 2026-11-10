@@ -1,116 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="pt-BR">
 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodConnect</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../CSS/home.css">
-    <script src="../JAVASCRIPT/home.js"></script>
 
+    <title>FoodConnect</title>
+
+    <link rel="stylesheet" href="../CSS/home.css">
+    <script src="../JAVASCRIPT/home.js" defer></script>
 </head>
 
 <body>
 
-    <div class="menu" onclick="abrirMenu()">&#9776;</div>
+    <!-- Menu -->
+    <div class="menu" onclick="abrirMenu()">☰</div>
 
-    <div id="menu-lateral">
-        <a href="index.html">Início</a><br>
-        <a href="login.html">Login</a><br>
+    <nav id="menu-lateral">
+        <a href="home.html">Início</a>
+        <a href="login.html">Login</a>
         <a href="cadastro.html">Cadastro</a>
-    </div>
-        
-    <div class="perfil">&#128100;</div>
-    
+    </nav>
+
+    <!-- Perfil -->
+    <a href="profile.html" class="perfil">
+        <img src="../img/perfil.webp" alt="Foto de perfil">
+    </a>
+
+    <!-- Cabeçalho -->
     <header id="header">
         <img src="../img/logo.png" alt="Logo FoodConnect">
     </header>
-        
-    <!--Conteúdo principal-->
+
+    <!-- Conteúdo Principal -->
     <main>
+
         <section id="main">
             <h1>Transformando excedentes em solidariedade</h1>
 
-            <p>Milhares de alimentos ainda próprios para consumo são descartados todos os dias. O FoodConnect conecta doadores, instituições e famílias para reduzir o desperdício de alimentos e fortalecer a solidariedade em nossa comunidade.</p>
-        
+            <p>
+                Milhares de alimentos ainda próprios para consumo são descartados
+                todos os dias. O FoodConnect conecta doadores, instituições e
+                famílias para reduzir o desperdício de alimentos e fortalecer a
+                solidariedade em nossa comunidade.
+            </p>
         </section>
 
-        <!--NOTÍCIAS-->
+        <!-- Notícias -->
         <section class="container-cards">
 
+            <!-- Card 1 -->
             <a href="news1.html" class="card">
-
                 <div class="imagem-container">
+                    <img
+                        src="../img/doacao.avif"
+                        alt="Doação de alimentos"
+                    >
 
-                    <img src="../img/doacao.avif" alt="Doação de alimentos">
-                
                     <div class="overlay">
                         <h3>Cada alimento pode fazer a diferença</h3>
                         <p>Clique para saber mais</p>
                     </div>
-
                 </div>
-
             </a>
-            
-            <a href="news2.html" class="card">
 
+            <!-- Card 2 -->
+            <a href="news2.html" class="card">
                 <div class="imagem-container">
-                    
-                    <img src="../img/doacao2.jpg" alt="Doação de alimentos">
+                    <img
+                        src="../img/doacao2.jpg"
+                        alt="Doação de alimentos"
+                    >
 
                     <div class="overlay">
                         <h3>Solidariedade que transforma</h3>
                         <p>Clique para saber mais</p>
                     </div>
-
                 </div>
-
             </a>
 
-
+            <!-- Card 3 -->
             <a href="news3.html" class="card">
-
                 <div class="imagem-container">
-
-                    <img src="../img/doacao3.webp" alt="Recebimento de alimentos">
+                    <img
+                        src="../img/doacao3.webp"
+                        alt="Recebimento de alimentos"
+                    >
 
                     <div class="overlay">
                         <h3>Doações que geram impacto</h3>
                         <p>Clique para saber mais</p>
                     </div>
-
                 </div>
-
             </a>
 
+            <!-- Card 4 -->
             <a href="news4.html" class="card">
-
                 <div class="imagem-container">
-
-                    <img src="../img/doacao4.webp" alt="Voluntários organizando alimentos">
+                    <img
+                        src="../img/doacao4.webp"
+                        alt="Voluntários organizando alimentos"
+                    >
 
                     <div class="overlay">
-                      <h3>Doações que geram impactos</h3>
-                    <p>Clique para saber mais</p>
-                  
+                        <h3>Doações que geram impacto</h3>
+                        <p>Clique para saber mais</p>
                     </div>
-
                 </div>
-
             </a>
+
         </section>
 
     </main>
-    
-    <!-- FOOTER -->
-   
+
+    <!-- Rodapé -->
     <footer id="footer">
-
         <p>FoodConnect &copy; 2026</p>
-
     </footer>
 
 </body>
+
 </html>

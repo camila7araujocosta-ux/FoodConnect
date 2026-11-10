@@ -1,0 +1,115 @@
+        .perfil-container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .perfil-container img{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .perfil-container button{
+            display: block;
+            width: 100%;
+            margin: 15px 0;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .foto-perfil{
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #64234C;
+        }
+
+        .foto-perfil img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .estatisticas{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .card-info{
+            background: #F7F4FA;
+            width: 180px;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .card-info h2{
+            color: #64234C;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .acoes button {
+            background: #64234C;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .acoes button:hover {
+            background: #7A2D5F;
+        }
+
+        .info{
+            width: 100%;
+            max-width: 500px;
+            margin: 30px auto;
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .info label{
+            text-align: left;
+            font-weight: bold;
+            color: #64234C;
+        }
+
+        .info input,
+        .info select{
+            padding: 12px;
+            border: 1px solid #d4d4d4;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        .info input:focus,
+        .info select:focus{
+            outline: none;
+            border-color: #64234C;
+        }
+
+        .btn-salvar{
+            margin-top: 20px;
+            padding: 12px;
+
+            background: #64234C;
+            color: white;
+
+            border: none;
+            border-radius: 10px;
+
+            cursor: pointer;
+        }

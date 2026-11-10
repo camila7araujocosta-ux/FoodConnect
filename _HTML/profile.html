@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodConnect - Perfil</title>
+
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <img src="../img/logo.png" alt="Logo FoodConnect">
+    </header>
+
+    <main class="perfil-container">
+
+        <!-- Foto de Perfil -->
+        <div class="foto-perfil"
+             onclick="document.getElementById('fotoInput').click()">
+
+            <img id="preview"
+                 src="../img/perfil.webp"
+                 alt="Foto de perfil">
+        </div>
+
+        <input
+            type="file"
+            id="fotoInput"
+            accept="image/*"
+            style="display: none;"
+        >
+
+        <!-- Nome exibido no perfil -->
+        <h1 id="nome-usuario">Meu Perfil</h1>
+
+        <!-- Informações -->
+        <div class="info">
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome">
+
+            <label for="email">Email</label>
+            <input type="email" id="email">
+
+            <label for="tipo">Tipo de conta</label>
+            <select id="tipo">
+                <option>Doador</option>
+                <option>Instituição</option>
+            </select>
+
+            <button
+                class="btn-salvar"
+                onclick="salvarPerfil()"
+            >
+                Salvar
+            </button>
+
+        </div>
+
+        <!-- Estatísticas -->
+        <div class="estatisticas">
+
+            <div class="card-info">
+                <h2>0</h2>
+                <p>Doações realizadas</p>
+            </div>
+
+            <div class="card-info">
+                <h2>0</h2>
+                <p>Instituições atendidas</p>
+            </div>
+
+            <div class="card-info">
+                <h2>0 kg</h2>
+                <p>Alimentos doados</p>
+            </div>
+
+        </div>
+
+        <!-- Ações -->
+        <div class="acoes">
+
+            <button onclick="editarPerfil()">
+                Editar Perfil
+            </button>
+
+            <button onclick="minhasDoacoes()">
+                Minhas Doações
+            </button>
+
+            <button onclick="sair()">
+                Sair
+            </button>
+        
+        </div>
+
+        <!-- Área de Doações -->
+        <div id="area-doacoes" style="display:none;">
+            <h2>Minhas Doações</h2>
+            <ul>
+                <li>Nenhuma doação registrada.</li>
+            </ul>
+
+        </div>
+
+    </main>
+
+    <footer id="footer">
+        <p>FoodConnect &copy; 2026</p>
+    </footer>
+
+    <script src="../JAVASCRIPT/profile.js"></script>
+
+</body>
+
+</html>
