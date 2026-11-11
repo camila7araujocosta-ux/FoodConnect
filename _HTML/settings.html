@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodConnect</title>
+    <title>Configurações</title>
+    <link rel="stylesheet" href="config.css">
 </head>
 <body>
-    
+
+    <div class="logo-container">
+        <img src="../img/logo.png" alt="Logo FoodConnect">
+    </div>
+
+    <!-- Link para a página de configurações -->
+    <link rel="stylesheet" href="../CSS/settings.css">
+
+    <div class="config-container">
+        <h1>Configurações</h1>
+
+        <div class="section">
+            <h3>Perfil</h3>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+        </div>
+
+        <div class="section">
+            <h3>Aparência</h3>
+            <label>
+                <input type="checkbox" id="tema">
+                Modo Escuro
+            </label>
+        </div>
+
+        <div class="section">
+            <h3>Notificações</h3>
+            <label>
+                <input type="checkbox" checked>
+                Receber notificações
+            </label>
+        </div>
+
+        <div class="section">
+            <h3>Idioma</h3>
+            <select>
+                <option>Português</option>
+                <option>English</option>
+                <option>Español</option>
+            </select>
+        </div>
+
+        <button id="salvar">Salvar Alterações</button>
+    </div>
+
+    <script src="config.js"></script>
+
 </body>
 </html>

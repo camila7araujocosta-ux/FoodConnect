@@ -7,7 +7,7 @@
 
 
         #header {
-            background-color: #FFffFf;
+            background-color: transparent;
             padding: 20px;
             text-align: center;
             width: 40%;
@@ -59,13 +59,14 @@
             height: 100%;
             background-color: #FFffFf;
             transition: 0.4s;
-            padding-top: 80px;
+            padding-top: 100px;
             box-shadow: 2px 0 10px rgba(0,0,0,0.2);
         }
 
         #menu-lateral a {
             display: block;
-            padding: 15px 20px;
+            padding: 20px;
+            padding-left: 15px;
             text-decoration: none;
             color: #5a2145;
             font-weight: bold;

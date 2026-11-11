@@ -1,0 +1,149 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Fundo da página */
+body{
+    font-family: Arial, sans-serif;
+    background-color:#F5ECEA;
+    min-height:100vh;
+    padding:40px;
+}
+
+/* Logo */
+.logo-container{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.logo-container img{
+    width:300px;
+    max-width:90%;
+}
+
+/* Caixa principal */
+.config-container{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(107,24,71,0.15);
+}
+
+/* Título */
+h1{
+    text-align:center;
+    color:#6B1847;
+    margin-bottom:30px;
+}
+
+/* Seções */
+.section{
+    margin-bottom:25px;
+}
+
+.section h3{
+    color:#6B1847;
+    margin-bottom:10px;
+}
+
+/* Labels */
+label{
+    color:#444;
+    font-weight:500;
+}
+
+/* Campos */
+input[type="text"],
+select{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    border:2px solid #E8D6D3;
+    border-radius:10px;
+    background:#FFFDFD;
+    transition:.3s;
+}
+
+input[type="text"]:focus,
+select:focus{
+    outline:none;
+    border-color:#6B1847;
+}
+
+/* Checkbox */
+input[type="checkbox"]{
+    accent-color:#6B1847;
+    margin-right:8px;
+}
+
+/* Botão */
+button{
+    width:100%;
+    padding:14px;
+    background:#6B1847;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#8B2B61;
+}
+
+/* Voltar */
+.voltar{
+    text-decoration:none;
+    color:#6B1847;
+    font-weight:bold;
+    display:inline-block;
+    margin-bottom:20px;
+}
+
+.voltar:hover{
+    color:#F47C5C;
+}
+
+/* MODO ESCURO */
+
+.dark-mode{
+    background:#24051B;
+    color:#F8EDEB;
+}
+
+.dark-mode .config-container{
+    background:#471233;
+    color:white;
+}
+
+.dark-mode h1,
+.dark-mode h3{
+    color:#FF8AA0;
+}
+
+.dark-mode label{
+    color:white;
+}
+
+.dark-mode input,
+.dark-mode select{
+    background:#5A2145;
+    color:white;
+    border:1px solid #FF8AA0;
+}
+
+.dark-mode button{
+    background:#FF8AA0;
+    color:#24051B;
+}
+
+.dark-mode #header{
+    background:#471233;
+}
