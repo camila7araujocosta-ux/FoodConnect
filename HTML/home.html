@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FoodConnect: conectamos doadores, instituições e famílias para reduzir o desperdício de alimentos.">
+    <title>FoodConnect · Início</title>
+
+    <link rel="stylesheet" href="../CSS/base.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <script src="../JAVASCRIPT/app.js" defer></script>
+    <script src="../JAVASCRIPT/home.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navbar (montada pelo app.js) -->
+    <header class="navbar" id="navbar"></header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-texto">
+                <span class="tag">Doação de alimentos</span>
+
+                <h1>Comida boa chega <span>a quem precisa</span></h1>
+
+                <p>
+                    Conectamos doadores, instituições e famílias para reduzir o
+                    desperdício de alimentos e fortalecer a solidariedade.
+                    Doe, ganhe XP e suba no ranking de quem mais ajuda.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="donate.html" class="btn btn-principal">Doar Agora</a>
+                    <a href="register.html?tipo=Instituição" class="btn btn-secundario">Sou uma Instituição</a>
+                </div>
+            </div>
+
+            <div class="hero-imagem">
+                <div class="circulo">
+                    <img src="../img/logo.png" alt="FoodConnect">
+                    <span class="flutuante f1">🥫 +20 XP por doação</span>
+                    <span class="flutuante f2">🏆 Suba no ranking</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- PAINEL DO JOGADOR (preenchido pelo home.js) -->
+        <section class="container painel reveal" id="painel-jogador"></section>
+
+        <!-- COMO FUNCIONA -->
+        <section id="como-funciona">
+            <div class="container">
+                <h2>Como funciona</h2>
+
+                <div class="etapas">
+                    <div class="etapa reveal">
+                        <span>1</span>
+                        <h3>Conte o que sobrou</h3>
+                        <p>Informe os alimentos disponíveis para doação.</p>
+                    </div>
+                    <div class="etapa reveal">
+                        <span>2</span>
+                        <h3>Conectamos você</h3>
+                        <p>Encontramos instituições próximas para receber alimentos.</p>
+                    </div>
+                    <div class="etapa reveal">
+                        <span>3</span>
+                        <h3>A comida chega</h3>
+                        <p>Os alimentos chegam para quem precisa — e você ganha XP.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOTÍCIAS -->
+        <section class="container noticias-secao">
+            <h2 class="titulo-secao">Notícias</h2>
+            <p class="muted center">Leia até o final e ganhe <b>+10 XP</b> por notícia.</p>
+
+            <div class="container-cards">
+
+                <a href="news1.html" class="card reveal" data-news="1">
+                    <div class="imagem-container">
+                        <img src="../img/doacao.avif" alt="Doação de alimentos">
+                        <span class="xp-tag">+10 XP</span>
+                        <div class="overlay">
+                            <h3>Cada alimento pode fazer a diferença</h3>
+                            <p>Clique para saber mais</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="news2.html" class="card reveal" data-news="2">
+                    <div class="imagem-container">
+                        <img src="../img/doacao2.jpg" alt="Doação de alimentos">
+                        <span class="xp-tag">+10 XP</span>
+                        <div class="overlay">
+                            <h3>Solidariedade que transforma</h3>
+                            <p>Clique para saber mais</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="news3.html" class="card reveal" data-news="3">
+                    <div class="imagem-container">
+                        <img src="../img/doacao3.webp" alt="Recebimento de alimentos">
+                        <span class="xp-tag">+10 XP</span>
+                        <div class="overlay">
+                            <h3>Doações que geram impacto</h3>
+                            <p>Clique para saber mais</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="news4.html" class="card reveal" data-news="4">
+                    <div class="imagem-container">
+                        <img src="../img/doacao4.webp" alt="Voluntários organizando alimentos">
+                        <span class="xp-tag">+10 XP</span>
+                        <div class="overlay">
+                            <h3>Todos podem combater o desperdício</h3>
+                            <p>Clique para saber mais</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- IMPACTO -->
+        <section id="impacto">
+            <div class="estatisticas reveal">
+                <div class="estatistica">
+                    <h2 data-contar="2000" data-sufixo="+">0</h2>
+                    <p>Refeições entregues</p>
+                </div>
+                <div class="estatistica">
+                    <h2 data-contar="150" data-sufixo="+">0</h2>
+                    <p>Doadores</p>
+                </div>
+                <div class="estatistica">
+                    <h2 data-contar="40" data-sufixo="+">0</h2>
+                    <p>Instituições parceiras</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta reveal">
+            <div class="cta-container">
+                <div>
+                    <h2>Faz parte de uma instituição?</h2>
+                    <p>Cadastre-se para receber alimentos gratuitamente.</p>
+                </div>
+                <a href="register.html?tipo=Instituição" class="btn btn-roxo">Cadastrar Instituição</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé (montado pelo app.js) -->
+    <footer id="footer"></footer>
+
+</body>
+
+</html>

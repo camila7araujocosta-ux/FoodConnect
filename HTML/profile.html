@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodConnect · Perfil</title>
+
+    <link rel="stylesheet" href="../CSS/base.css">
+    <link rel="stylesheet" href="../CSS/profile.css">
+    <script src="../JAVASCRIPT/app.js" defer></script>
+    <script src="../JAVASCRIPT/profile.js" defer></script>
+</head>
+
+<body>
+
+    <header class="navbar" id="navbar"></header>
+
+    <main class="container page">
+
+        <div class="perfil-layout">
+
+            <!-- COLUNA ESQUERDA: identidade e nível -->
+            <aside class="card-box perfil-lateral">
+
+                <div class="foto-perfil" id="foto-perfil" title="Clique para trocar a foto">
+                    <img id="preview" src="../img/perfil.webp" alt="Foto de perfil">
+                    <span class="foto-troca">📷</span>
+                </div>
+                <input type="file" id="fotoInput" accept="image/*" hidden>
+
+                <h1 id="nome-usuario">Meu Perfil</h1>
+                <span class="tag" id="tipo-tag">Doador</span>
+
+                <div class="nivel-box">
+                    <p><b id="perfil-nivel">Nível 1</b> · <span id="perfil-titulo">Semente</span></p>
+                    <div class="barra"><i id="perfil-barra"></i></div>
+                    <small class="muted" id="perfil-xp">0 XP</small>
+                </div>
+
+                <p class="sequencia">🔥 Sequência: <b id="sequencia">0</b> dia(s)</p>
+            </aside>
+
+            <!-- COLUNA DIREITA -->
+            <section class="perfil-direita">
+
+                <div class="stats">
+                    <div class="card-info">
+                        <h2 id="stat-doacoes">0</h2>
+                        <p>Doações realizadas</p>
+                    </div>
+                    <div class="card-info">
+                        <h2 id="stat-inst">0</h2>
+                        <p>Instituições atendidas</p>
+                    </div>
+                    <div class="card-info">
+                        <h2 id="stat-kg">0 kg</h2>
+                        <p>Alimentos doados</p>
+                    </div>
+                </div>
+
+                <div class="card-box">
+                    <h2 class="sub">Meus dados</h2>
+
+                    <div class="field">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" disabled>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" disabled>
+                    </div>
+
+                    <div class="field">
+                        <label for="tipo">Tipo de conta</label>
+                        <select id="tipo" disabled>
+                            <option>Doador</option>
+                            <option>Instituição</option>
+                        </select>
+                    </div>
+
+                    <p class="erro" id="erro"></p>
+
+                    <div class="acoes">
+                        <button class="btn btn-roxo" id="btn-editar">Editar Perfil</button>
+                        <button class="btn btn-principal" id="btn-salvar" hidden>Salvar</button>
+                        <button class="btn btn-secundario" id="btn-historico">Minhas Doações</button>
+                        <button class="btn btn-secundario" id="btn-sair-perfil">Sair</button>
+                    </div>
+                </div>
+
+                <div class="card-box">
+                    <h2 class="sub">🏅 Minhas insígnias</h2>
+                    <div class="mini-insignias" id="lista-insignias"></div>
+                </div>
+
+                <div class="card-box" id="area-doacoes">
+                    <h2 class="sub">Minhas Doações</h2>
+                    <div class="historico" id="historico"></div>
+                </div>
+
+            </section>
+        </div>
+
+    </main>
+
+    <footer id="footer"></footer>
+
+</body>
+
+</html>

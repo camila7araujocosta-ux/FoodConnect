@@ -1,0 +1,75 @@
+/* =====================================================
+   FoodConnect · game.css  (missões e ranking)
+   ===================================================== */
+
+.titulo-pagina { text-align: center; margin-bottom: 30px; }
+.titulo-pagina h1 { font-size: 2.2rem; }
+
+/* Resumo do nível */
+.resumo-nivel { display: flex; align-items: center; gap: 24px; margin-bottom: 34px; }
+.nivel-bolha {
+    flex-shrink: 0;
+    width: 96px; height: 96px; border-radius: 50%;
+    background: var(--brand); color: var(--on-brand);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    line-height: 1.1;
+}
+.nivel-bolha small { font-size: .75rem; }
+.nivel-bolha b { font-size: 2.2rem; }
+.resumo-nivel > div:last-child { flex: 1; }
+.resumo-nivel h2 { font-size: 1.4rem; }
+.resumo-nivel .barra { margin: 10px 0 6px; }
+
+.subtitulo { font-size: 1.5rem; margin: 10px 0 18px; }
+
+/* Missões */
+.lista-missoes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 18px; margin-bottom: 40px; }
+.missao { display: flex; flex-direction: column; gap: 10px; transition: transform .25s; }
+.missao:hover { transform: translateY(-4px); }
+.missao-topo { display: flex; align-items: center; gap: 14px; }
+.missao-icone { font-size: 2.2rem; }
+.missao h3 { font-size: 1.1rem; }
+.missao p { color: var(--muted); font-size: .92rem; }
+.missao-xp { margin-left: auto; font-weight: 700; color: var(--accent-strong); white-space: nowrap; }
+.missao-rodape { display: flex; align-items: center; gap: 12px; }
+.missao-rodape .barra { flex: 1; }
+.missao-rodape small { color: var(--muted); min-width: 44px; text-align: right; }
+.missao.resgatada { opacity: .6; }
+.selo-ok { color: var(--ok); font-weight: 700; }
+
+/* Insígnias */
+.grade-insignias { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; }
+.insignia { text-align: center; padding: 20px 12px; }
+.insignia .ic { font-size: 2.6rem; display: block; }
+.insignia b { display: block; color: var(--brand); margin-top: 4px; }
+.insignia small { color: var(--muted); }
+.insignia.bloqueada { filter: grayscale(1); opacity: .45; }
+
+/* Ranking */
+.podio { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: end; margin-bottom: 30px; }
+.podio-item { text-align: center; padding: 20px 10px; border-radius: 22px; background: var(--card); box-shadow: var(--shadow); border: 1px solid var(--border); }
+.podio-item .medalha { font-size: 2.6rem; }
+.podio-item b { display: block; color: var(--brand); }
+.podio-item.p1 { padding-top: 40px; padding-bottom: 40px; background: var(--soft); }
+.podio-item.p2 { order: -1; }
+
+.lista-ranking { display: flex; flex-direction: column; gap: 10px; }
+.linha-rank {
+    display: grid; grid-template-columns: 44px 1fr auto;
+    align-items: center; gap: 14px;
+    padding: 14px 20px; border-radius: 16px;
+    background: var(--card); border: 2px solid transparent;
+    box-shadow: var(--shadow);
+}
+.linha-rank .pos { font-weight: 700; font-size: 1.2rem; color: var(--brand); }
+.linha-rank small { display: block; color: var(--muted); }
+.linha-rank .pts { font-weight: 700; color: var(--accent-strong); }
+.linha-rank.voce { border-color: var(--brand); background: var(--soft); }
+
+.dica-rank { text-align: center; margin-bottom: 24px; font-weight: 600; color: var(--brand); }
+
+@media (max-width: 700px) {
+    .resumo-nivel { flex-direction: column; text-align: center; }
+    .podio { grid-template-columns: 1fr; }
+    .podio-item.p2 { order: 0; }
+}

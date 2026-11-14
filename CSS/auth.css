@@ -1,0 +1,51 @@
+/* =====================================================
+   FoodConnect · auth.css  (login e cadastro)
+   ===================================================== */
+
+.auth { position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 16px;
+}
+
+.auth-card { width: min(440px, 100%); text-align: center; }
+.auth-card > img { width: 200px; margin-bottom: 10px; }
+.auth-card h1 { font-size: 1.7rem; margin-bottom: 6px; }
+.auth-card > p { color: var(--muted); margin-bottom: 22px; }
+.auth-card form { text-align: left; }
+.auth-card .btn { margin-top: 10px; }
+
+.auth-troca { margin-top: 20px; font-size: .95rem; }
+.auth-troca a { color: var(--brand); font-weight: 700; }
+
+.separador { display: flex; align-items: center; gap: 12px; margin: 18px 0 8px; color: var(--muted); font-size: .85rem; }
+.separador::before, .separador::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+
+/* Escolha do tipo de conta */
+.tipos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.tipo-opcao input { position: absolute; opacity: 0; pointer-events: none; }
+.tipo-opcao span {
+    display: block;
+    text-align: center;
+    padding: 14px 8px;
+    border: 2px solid var(--border);
+    border-radius: 14px;
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--text);
+    background: var(--input-bg);
+    transition: .2s;
+}
+.tipo-opcao input:checked + span { border-color: var(--brand); background: var(--soft); color: var(--brand); }
+.tipo-opcao { position: relative; }
+
+.termos { display: flex; align-items: center; gap: 10px; font-size: .92rem; margin-bottom: 10px; }
+
+.forca { height: 6px; border-radius: 6px; background: var(--soft); overflow: hidden; margin-top: 2px; }
+.forca i { display: block; height: 100%; width: 0; background: var(--erro); transition: .3s; }
+
+.auth > .btn-back { position: absolute; top: 20px; left: 20px; margin: 0; }
+
+.auth-card > a > img { width: 200px; margin-bottom: 10px; }

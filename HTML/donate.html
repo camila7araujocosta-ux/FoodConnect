@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodConnect · Doar</title>
+
+    <link rel="stylesheet" href="../CSS/base.css">
+    <link rel="stylesheet" href="../CSS/donate.css">
+    <script src="../JAVASCRIPT/app.js" defer></script>
+    <script src="../JAVASCRIPT/donate.js" defer></script>
+</head>
+
+<body>
+
+    <header class="navbar" id="navbar"></header>
+
+    <main class="container page">
+
+        <div class="titulo-pagina">
+            <h1>Fazer uma doação</h1>
+            <p class="muted">Conte o que sobrou, escolha quem vai receber e ganhe XP.</p>
+        </div>
+
+        <div class="doar-grid">
+
+            <!-- FORMULÁRIO -->
+            <form id="form-doar" class="card-box" novalidate>
+
+                <h2 class="passo-titulo"><span>1</span> O que você vai doar?</h2>
+
+                <div class="linha">
+                    <div class="field">
+                        <label for="alimento">Tipo de alimento</label>
+                        <select id="alimento">
+                            <option value="">Selecione...</option>
+                            <option>Alimentos não perecíveis</option>
+                            <option>Frutas e verduras</option>
+                            <option>Pães e massas</option>
+                            <option>Refeições prontas</option>
+                            <option>Laticínios</option>
+                            <option>Bebidas</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="kg">Quantidade (kg)</label>
+                        <input type="number" id="kg" min="1" max="200" step="1" placeholder="Ex.: 5">
+                    </div>
+
+                    <div class="field">
+                        <label for="validade">Validade</label>
+                        <input type="date" id="validade">
+                    </div>
+                </div>
+
+                <h2 class="passo-titulo"><span>2</span> Escolha a instituição</h2>
+                <div id="lista-inst" class="lista-inst"></div>
+
+                <h2 class="passo-titulo"><span>3</span> Observações <small class="muted">(opcional)</small></h2>
+                <div class="field">
+                    <textarea id="obs" rows="3" maxlength="200" placeholder="Ex.: retirar no portão lateral, após as 14h."></textarea>
+                </div>
+
+                <p class="erro" id="erro"></p>
+                <button type="submit" class="btn btn-principal btn-block">Confirmar doação</button>
+            </form>
+
+            <!-- RECOMPENSA PREVISTA -->
+            <aside class="card-box recompensa" id="recompensa">
+                <h3>🎁 Recompensa prevista</h3>
+                <div class="xp-grande"><span id="xp-previsto">+20</span> XP</div>
+                <p class="muted">20 XP por doação + 4 XP a cada kg (até 50 kg).</p>
+                <div class="barra"><i id="barra-prev" style="width:0"></i></div>
+                <small class="muted" id="texto-prev"></small>
+            </aside>
+
+            <!-- SUCESSO (aparece depois de doar) -->
+            <section id="sucesso" class="card-box sucesso" hidden></section>
+
+        </div>
+
+    </main>
+
+    <footer id="footer"></footer>
+
+</body>
+
+</html>

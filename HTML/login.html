@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodConnect · Entrar</title>
+
+    <link rel="stylesheet" href="../CSS/base.css">
+    <link rel="stylesheet" href="../CSS/auth.css">
+    <script src="../JAVASCRIPT/app.js" defer></script>
+    <script src="../JAVASCRIPT/auth.js" defer></script>
+</head>
+
+<body>
+
+    <main class="auth">
+        <div class="card-box auth-card">
+
+            <a href="home.html"><img src="../img/logo.png" alt="Logo FoodConnect"></a>
+            <h1>Bem-vindo de volta</h1>
+            <p>Entre para acompanhar suas doações e ganhar XP.</p>
+
+            <form id="form-login" novalidate>
+                <div class="field">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="voce@email.com" autocomplete="email">
+                </div>
+
+                <div class="field">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Sua senha" autocomplete="current-password">
+                </div>
+
+                <p class="erro" id="erro"></p>
+
+                <button type="submit" class="btn btn-roxo btn-block">Entrar</button>
+            </form>
+
+            <div class="separador">ou</div>
+
+            <button type="button" id="btn-demo" class="btn btn-secundario btn-block">
+                Entrar como visitante (demonstração)
+            </button>
+
+            <p class="auth-troca">Ainda não tem conta? <a href="register.html">Cadastre-se</a></p>
+
+        </div>
+    </main>
+
+</body>
+
+</html>

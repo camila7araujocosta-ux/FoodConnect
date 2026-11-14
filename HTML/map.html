@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodConnect · Mapa</title>
+
+    <link rel="stylesheet" href="../CSS/base.css">
+    <link rel="stylesheet" href="../CSS/map.css">
+
+    <script src="../JAVASCRIPT/app.js" defer></script>
+    <script src="../JAVASCRIPT/map.js" defer></script>
+</head>
+
+<body>
+
+    <header class="navbar" id="navbar"></header>
+
+    <main class="container page">
+
+        <div class="titulo-pagina">
+            <h1>Onde doar</h1>
+            <p class="muted">Encontre instituições que recebem doações e pontos de coleta na cidade.</p>
+        </div>
+
+        <p class="aviso-ficticio">ℹ️ Mapa ilustrativo de uma cidade fictícia, criado apenas para a demonstração do projeto.</p>
+
+        <!-- filtros -->
+        <div class="filtros" id="filtros">
+            <button class="filtro ativo" data-filtro="todos">Todos</button>
+            <button class="filtro" data-filtro="inst">🏠 Instituições</button>
+            <button class="filtro" data-filtro="coleta">📦 Pontos de coleta</button>
+            <button class="filtro loc" id="btn-loc">📍 Marcar onde estou</button>
+        </div>
+        <p class="msg-loc muted" id="msg-loc"></p>
+
+        <div class="mapa-layout">
+
+            <!-- o mapa é um desenho em SVG (feito pelo map.js); dá para arrastar e dar zoom -->
+            <div class="mapa" id="mapa" aria-label="Mapa ilustrativo com instituições e pontos de coleta">
+                <div class="mapa-view" id="mapa-view">
+                    <svg id="cidade" width="3000" height="2000" viewBox="-900 -600 3000 2000" aria-hidden="true"></svg>
+                    <div id="pinos"></div>
+                </div>
+
+                <div class="mapa-ctrl">
+                    <button id="zoom-in" aria-label="Aproximar">+</button>
+                    <button id="zoom-out" aria-label="Afastar">−</button>
+                    <button id="zoom-reset" aria-label="Ver mapa inteiro">⌂</button>
+                </div>
+
+                <div class="mapa-legenda">
+                    <span><i class="mini inst"></i> Instituição</span>
+                    <span><i class="mini coleta"></i> Ponto de coleta</span>
+                </div>
+            </div>
+
+            <div class="lista-locais" id="lista-locais"></div>
+        </div>
+
+    </main>
+
+    <footer id="footer"></footer>
+
+</body>
+
+</html>

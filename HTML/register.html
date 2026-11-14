@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodConnect · Criar conta</title>
+
+    <link rel="stylesheet" href="../CSS/base.css">
+    <link rel="stylesheet" href="../CSS/auth.css">
+    <script src="../JAVASCRIPT/app.js" defer></script>
+    <script src="../JAVASCRIPT/auth.js" defer></script>
+</head>
+
+<body>
+
+    <main class="auth">
+        <div class="card-box auth-card">
+
+            <a href="home.html"><img src="../img/logo.png" alt="Logo FoodConnect"></a>
+            <h1>Crie sua conta</h1>
+            <p>Comece a doar e ganhe <b>50 XP</b> de boas-vindas.</p>
+
+            <form id="form-cadastro" novalidate>
+
+                <div class="field">
+                    <span class="label">Tipo de conta</span>
+                    <div class="tipos">
+                        <label class="tipo-opcao">
+                            <input type="radio" name="tipo" value="Doador" checked>
+                            <span>🥫 Doador</span>
+                        </label>
+                        <label class="tipo-opcao">
+                            <input type="radio" name="tipo" value="Instituição">
+                            <span>🏠 Instituição</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Seu nome ou da instituição" autocomplete="name">
+                </div>
+
+                <div class="field">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="voce@email.com" autocomplete="email">
+                </div>
+
+                <div class="field">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Mínimo de 6 caracteres" autocomplete="new-password">
+                    <div class="forca"><i id="forca"></i></div>
+                </div>
+
+                <div class="field">
+                    <label for="senha2">Confirmar senha</label>
+                    <input type="password" id="senha2" placeholder="Repita a senha" autocomplete="new-password">
+                </div>
+
+                <label class="termos">
+                    <input type="checkbox" id="termos">
+                    Li e aceito os termos de uso
+                </label>
+
+                <p class="erro" id="erro"></p>
+
+                <button type="submit" class="btn btn-roxo btn-block">Criar conta</button>
+            </form>
+
+            <p class="auth-troca">Já tem conta? <a href="login.html">Entrar</a></p>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
